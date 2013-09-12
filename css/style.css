@@ -1,0 +1,15 @@
+body {
+	position: relative;
+    background-image:url('../galleria/themes/classic/subtle_white_feathers.png');
+}
+
+
+#jquery_jplayer_1,
+#jp_container_1,
+.jp-type-playlist,
+.jp-gui,
+.jp-interface,
+.jp-controls {
+	z-index: 100000 !important;
+}
+
