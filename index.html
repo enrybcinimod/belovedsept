@@ -48,7 +48,7 @@
 
 
 
-		<a id="playerbutton" href="play" data-slidepanel="panel"><img src="img/play.png"></a>
+		<a id="playerbutton" href="play" data-slidepanel="panel" style="border-radius:10px; margin-left:.5em; padding:.6em; background:#CCDDEF; color:#BB7A7A; text-decoration:none; font-size:2.4em">&#9776;</a>
 
 		<script type="text/javascript">
 		      $(document).ready(function(){
@@ -167,74 +167,66 @@
                         <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
                         <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
                         <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
-                        <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
-                        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-                        <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-                        <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
                     </ul>
                     <div class="jp-progress">
                         <div class="jp-seek-bar">
                             <div class="jp-play-bar"></div>
                         </div>
                     </div>
-                    <div class="jp-volume-bar">
-                        <div class="jp-volume-bar-value"></div>
-                    </div>
                     <div class="jp-time-holder">
                         <div class="jp-current-time"></div>
                         <div class="jp-duration"></div>
                     </div>
-                    <ul class="jp-toggles">
-                        <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-                        <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
-                        <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-                        <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
-                    </ul>
                 </div>
                 <div class="jp-no-solution">
                     <span>Update Required</span>
                     To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
                 </div>
 
-        <div id="wrapper">
+                <div id="wrapper">
 
 
-    <div id="actions">
+                    <div id="actions">
 
 
-        <button onclick='if($("#cont1").get(0).isClosed) $("#cont1").containerize("open",500); else $("#cont1").containerize("close",500);'>Credits</button>
-       <button onclick='if($("#cont3").get(0).isClosed) $("#cont3").containerize("open",500); else $("#cont3").containerize("close",500);'>Track List</button>
-    </div>
+                        <button onclick='if($("#cont1").get(0).isClosed) $("#cont1").containerize("open",500); else $("#cont1").containerize("close",500);'>Credits</button>
+                       <button onclick='if($("#cont3").get(0).isClosed) $("#cont3").containerize("open",500); else $("#cont3").containerize("close",500);'>Track List</button>
+                       <button onclick='if($("#cont2").get(0).isClosed) $("#cont2").containerize("open",500); else $("#cont2").containerize("close",500);'>Download</button>
+                    </div>
 
-    <div id="cont1" class="container" style=" top:130px; left: 7em; height: 30em; width: 50em; opacity:1" data-drag=true  data-collapsable=true data-close=true data-containment="document" data-buttons="close">
-        <h2>Credits</h2>
-        <br>
-        <p><br><br><h4>Beloved by New Gods</h4>Produced by Dominic Byrne, Adrian Beltrame, Anna Laverty</p>
-        <br>
-        <p>Music by New Gods, Words By D. Byrne<br>
-            Bass-Rich Bradbeer<br>
-            Drums-Sam Raines<br>
-            Keys-Dale Packard<br>
-            Guitar-Dominic Byrne<br>
-            Guitar-Adrian Beltrame<br>
-            Horns-Liam Mcgorry, <br>
-            Strings-Sophie de Tempora
-        </p>
-    </div>
+                    <div id="cont1" class="container" style=" top:130px; left: 7em; height: 30em; width: 50em; opacity:1" data-drag=true  data-collapsable=true data-close=true data-containment="document" data-buttons="close">
+                        <h2>Credits</h2>
+                        <br>
+                        <p><br><br><h4>Beloved by New Gods</h4>Produced by Dominic Byrne, Adrian Beltrame, Anna Laverty</p>
+                        <br>
+                        <p>Music by New Gods, Words By D. Byrne<br>
+                            Bass-Rich Bradbeer<br>
+                            Drums-Sam Raines<br>
+                            Keys-Dale Packard<br>
+                            Guitar-Dominic Byrne<br>
+                            Guitar-Adrian Beltrame<br>
+                            Horns-Liam Mcgorry, <br>
+                            Strings-Sophie de Tempora
+                        </p>
+                    </div>
 
 
-    <div id="cont3" class="container" style=" top:2em; left: 5em; height: 16em; width: 17em; opacity:.93; font-size:2em" data-skin="black" data-drag=true data-dock="dock" data-collapsable=true data-containment="document" data-close=true data-draggrid="100,100" data-rememberme=true data-buttons="close">
-        
-                <div class="jp-playlist" style="margin-top:1.2em;">
-                    <ul>
-                        <li></li>
-                    </ul>
+                    <div id="cont3" class="container" style=" top:2em; left: 5em; height: 16em; width: 17em; opacity:.93; font-size:2em" data-skin="black" data-drag=true data-dock="dock" data-collapsable=true data-containment="document" data-close=true data-draggrid="100,100" data-rememberme=true data-buttons="close">
+                        
+                                <div class="jp-playlist" style="margin-top:1.2em;">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                    </div>
+
+                    <div id="dock"></div>
+
+                    <div id="cont2" class="container" style=" top:130px; left: 7em; height: 30em; width: 50em; opacity:1" data-drag=true  data-collapsable=true data-close=true data-containment="document" data-buttons="close">
+                        <p>Download</p>
+                    </div>
+
                 </div>
-    </div>
-
-    <div id="dock"></div>
-
-</div>
 
             </div>
         </div>
