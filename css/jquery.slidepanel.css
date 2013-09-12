@@ -94,6 +94,10 @@
         #playerbutton {
             padding: 85px;
             position: relative;
-            z-index: 100000 !important;
-            opacity: 1 !important;
+            z-index: 50000;
+            opacity: 1;
+        }
+        #cont4 {
+            z-index: 100000;
+            top:1em; left: 7em; height: 43em; width: 50em; opacity:1
         }
