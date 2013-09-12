@@ -15,8 +15,8 @@
             box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), 1px 1px 0 rgba(255, 255, 255, 0.85) inset;
         }
         .cb_slide_panel.panel_top, .cb_slide_panel.panel_bottom {
-            height: 9.35em;
-            width: 10em;
+            height: 9.5em;
+            width: 0em;
         }
         .cb_slide_panel.panel_top {
             box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), -1px -1px 0 rgba(255, 255, 255, 0.85) inset;
@@ -99,14 +99,14 @@
         }
 
         #cont4 {
-            top:1em; left: 7em; height: 34em; width: 50em; opacity:1;
+            top:1em; left: 7em; height: 34em; width: 42em; opacity:1;
             font-family: 'Times New Roman';
             font-weight: bold;
             text-align: center;
             font-size: 1em;
         }
         #cont1 {
-            top:30px; left: 7em; height: 30em; width: 50em; opacity:1;
+            top:30px; left: 2em; height: 30em; width: 40em; opacity:1;
             font-family: 'Times New Roman';
             font-weight: bold;
             text-align: center;
