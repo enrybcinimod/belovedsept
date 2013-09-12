@@ -1,0 +1,677 @@
+
+<!doctype html>
+<html>
+	<head>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.slidepanel.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.slidepanel.css">
+        <link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+        <link href='css/mb.containerPlus.css' rel='stylesheet' type='text/css'>
+		<script src="galleria/galleria-1.2.9.min.js"></script>
+        <link rel="stylesheet" href="galleria/themes/classic/galleria.classic.css">
+        <script src="galleria/themes/classic/galleria.classic.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+        <script type="text/javascript" src="inc/jquery.mb.containerPlus.js"></script>
+        <script type="text/javascript" src="inc/mb.containerPlus.plugins.js"></script>
+        <style>
+
+
+        #actions button{
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 1em;
+            display: inline-block;
+            margin: 3px;
+            font-size: 1em;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #d4d4d4;
+        }
+
+        #actions button:hover{
+            background: #ffc0ff;
+        }
+
+
+
+        </style>
+        
+
+
+	</head>
+	<body>
+
+
+
+		<a id="playerbutton" href="play" data-slidepanel="panel" style="border-radius:10px; margin-left:.5em; padding:.6em; background:#CCDDEF; color:#BB7A7A; text-decoration:none; font-size:2.4em">&#9776;</a>
+
+		<script type="text/javascript">
+		      $(document).ready(function(){
+		          $('[data-slidepanel]').slidepanel({
+		              orientation: 'top',
+		              mode: 'push'
+		          });
+		      });
+		</script>
+
+
+		<div id="galleria">
+			</div>
+			<script>
+	            Galleria.configure({
+	            	trueFullscreen:false,
+	            	thumbnails: false,
+	            	showCounter: false,
+	            	wait: true,
+                    transition: 'flash',
+                    touchTransition: 'fadeslide',
+                    transitionSpeed: 770
+
+	            })
+	            var data = [
+	            { image: "img/beachwedding.jpg"},
+                { image: "img/cunningham.jpg"},
+                { image: "img/claire.jpg"},
+                { image: "img/shakespeare.jpg"},
+                { image: "img/free.jpg"},
+                { image: "img/allnations.jpg"},
+                { image: "img/richdavis.jpg"},
+                { image: "img/70sbeach.jpg"},
+                { image: "img/rockitdrawing.jpg"},
+                { image: "img/cloudsky.jpg"},
+                { image: "img/fishingrods.jpg"},
+                { image: "img/bluelightdisco.jpg"},
+                { image: "img/alice.jpg"},
+                { image: "img/wallpaint.jpg"},
+                { image: "img/laneway.jpg"},
+                { image: "img/skaters.jpg"},
+                { image: "img/zombieindoorway.jpg"},
+                { image: "img/zombiechef.jpg"},
+                { image: "img/kidsonsteps.gif"},
+                { image: "img/newspaperart.jpg"},
+                { image: "img/newspaperballerina.jpg"},
+                { image: "img/cityphoto.jpg"},
+                { image: "img/metalboy.jpg"},
+                { image: "img/digitaltrip.jpg"},
+                { image: "img/colourphant.jpg"},
+                { image: "img/soulsucker.jpg"},
+                { image: "img/img2464.jpg"},
+                { image: "img/turtle.jpg"},
+                { image: "img/facemerge.jpg"},
+                { image: "img/lonelyman.jpg"},
+                { image: "img/bluegold.jpg"},
+                { image: "img/jessica.jpg"},
+                { image: "img/pngkids.jpg"},
+                { image: "img/factory.jpg"},
+                { image: "img/coolgirl.jpg"},
+                { image: "img/townes.jpg"},
+                { image: "img/venicebeach.jpg"},
+                { image: "img/littlegirldark.jpg"},
+                { image: "img/littlegirllight.jpg"},
+                { image: "img/centerplace.jpg"},
+                { image: "img/staystrong.jpg"},
+                { image: "img/ghosts.jpg"},
+                { image: "img/horny.jpg"},
+                { image: "img/cyberchick.jpg"},
+                { image: "img/crackheads.jpg"},
+                { image: "img/bridge.jpg"},
+                { image: "img/bairnsdale.jpg"},
+                { image: "img/madman.jpg"},
+                { image: "img/demons.jpg"},
+                { image: "img/blackice.jpg"},
+                { image: "img/shadowman.jpg"},
+                { image: "img/ghostbabies.jpg"},
+                { image: "img/silvergoldmoon.jpg"},
+                { image: "img/reasonstolive.jpg"},
+                { image: "img/adriandream.jpg"},
+                { image: "img/bluewave.jpg"},
+                { image: "img/nicky.jpg"},
+                { image: "img/billhicks.jpg"},
+                { image: "img/eyeball.jpg"},
+                { image: "img/notnegotiable.jpg"},
+                { image: "img/elvis.jpg"},
+                { image: "img/samcooke.jpg"},
+                { image: "img/father.jpg"},
+                { image: "img/loveandlove.jpg"},
+                { image: "img/married.jpg"},
+                { image: "img/weightoff.jpg"},
+                { image: "img/nothinginourway.jpg"},
+                { image: "img/mountains.jpg"},
+                { image: "img/emandhailey.jpg"},
+                { image: "img/rayandtess.jpg"}
+	            ];
+	            Galleria.ready(function(){this.enterFullscreen();});
+	            Galleria.run('#galleria', {
+					height: .5625,
+	            	dataSource: data,
+	            });
+	        </script>
+
+
+		<div id="slidepanel" class="cb_slide_panel panel_top" style="top: 0px; right: -318px; display: none;">
+
+
+
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+        <div id="jp_container_1" class="jp-audio">
+            <div class="jp-type-playlist">
+                <div class="jp-gui jp-interface">
+                    <ul class="jp-controls">
+                        <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                        <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                    </ul>
+                    <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                        </div>
+                    </div>
+                    <div class="jp-time-holder">
+                        <div class="jp-current-time"></div>
+                        <div class="jp-duration"></div>
+                    </div>
+                </div>
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                </div>
+
+
+
+                    <div id="actions">
+
+
+                        <button onclick='if($("#cont1").get(0).isClosed) $("#cont1").containerize("open",500); else $("#cont1").containerize("close",500);'>Credits</button>
+                       <button onclick='if($("#cont3").get(0).isClosed) $("#cont3").containerize("open",500); else $("#cont3").containerize("close",500);'>Track List</button>
+                       <button onclick='if($("#cont2").get(0).isClosed) $("#cont2").containerize("open",500); else $("#cont2").containerize("close",500);'>Download</button>
+                       <button onclick='if($("#cont4").get(0).isClosed) $("#cont4").containerize("open",500); else $("#cont4").containerize("close",500);'>Lyrics</button>
+                    </div>
+
+                    <div id="cont1" class="container" data-drag=true  data-collapsable=true data-close=true data-containment="document" data-buttons="fullscreen,close">
+                        <h2>Credits</h2>
+                        <br>
+                        <p><br><br><h4>Beloved by New Gods</h4>Produced by Dominic Byrne, Adrian Beltrame and Anna Laverty</p>
+                        <br>
+                        <p>Music by New Gods, Words By D. Byrne<br>
+                            Bass-Rich Bradbeer<br>
+                            Drums-Sam Raines<br>
+                            Keys-Dale Packard<br>
+                            Guitar-Dominic Byrne<br>
+                            Guitar-Adrian Beltrame<br>
+                            Horns-Liam Mcgorry, Gus<br>
+                            Strings-Sophie de Tempora<br>
+                            String Arrangement-Byrne,Beltrame,de Tempora<br>
+                            Recorded in Northcote, Ivanhoe and Sing Sing studios<br>
+                            Mixed at Sing Sing Studios and in Northcote by Byrne, Laverty, Beltrame.
+
+                            
+                        </p>
+                    </div>
+
+                    <div id="cont3" class="container" style=" top:2em; left: 5em; height: 16em; width: 17em; opacity:.93; font-size:2em;" data-skin="black" data-drag=true data-dock="dock" data-collapsable=true data-containment="document" data-close=true data-rememberme=true data-buttons="close">
+                                <div class="jp-playlist" style="margin-top:1.2em;">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                    </div>
+
+                    <div id="dock"></div>
+
+                    <div id="cont2" class="container" style=" top:130px; left: 7em; height: 30em; width: 50em; opacity:1; z-index:100000" data-drag=true  data-collapsable=true data-close=true data-containment="document" data-buttons="close">
+                        <p>Download</p>
+                    </div>
+
+                    <div id="cont4" class="container" data-drag=true  data-collapsable=true data-close=true data-containment="document" data-buttons="fullscreen,close">
+                        <h2>Lyrics</h2>
+                        <p><br /><br />Beneath The World<br /><br>
+                        Sometimes I wonder where I've been<br />
+                        The edge of the world is strange<br />
+                        Is this the world I was brought into?<br />
+                        Scenes that can't remain<br />
+                        <br />
+                        I think about my friends and I don't know why<br />
+                        things had to get away<br />
+                        Last time tired eyes met mine<br />
+                        Standing in the rain<br />
+                        <br />
+                        At night beneath the world is ours<br />
+                        We can dance through streets for endless hours<br />
+                        Of all I've ever known<br />
+                        I remember places where we've grown<br />
+                        <br />
+                        Will you walk away?<br />
+                        <br />
+                        When there's a battle still to fight<br />
+                        Is it worth it still to pay the price?<br />
+                        When all that I know now<br />
+                        I won't sell my friends to save my hide<br />
+                        <br />
+                        But should I walk away?<br />
+                        <br />
+                        <br />
+                        <br />
+                        Too High<br />
+                        <br />
+                        Eddie rides his bike<br />
+                        By her window in the eve<br />
+                        With his arms out wide<br />
+                        Through the warm December breeze<br />
+                        <br />
+                        He waits outside the gate<br />
+                        Streetlight shadows through the leaves<br />
+                        Can hear the broken plates<br />
+                        and the yelling from the street<br />
+                        <br />
+                        Hey Joe, don't go<br />
+                        I'm too high to go back home<br />
+                        <br />
+                        I hate this dead-end town<br />
+                        It's just a park and your bedroom<br />
+                        I hate your folks as well<br />
+                        I hope they kill each other soon<br />
+                        <br />
+                        Hey Joe, don't go<br />
+                        I'm too high to go back home<br />
+                        <br />
+                        On my own<br />
+                        <br />
+                        <br />
+                        Sky-Man<br />
+                        <br />
+                        She sleeps to stay young<br />
+                        Until her prince comes<br />
+                        And dreams of her love in flight<br />
+                        And the moon becomes a line<br />
+                        and the line becomes a sphere of light<br />
+                        forever in the night<br />
+                        <br />
+                        Waiting for the worst never changes how it hurts<br />
+                        and i'm ready for the wave<br />
+                        like an ocean grave<br />
+                        you can't save what can't be saved<br />
+                        so i'll see you on the shore<br />
+                        From the ocean floor<br />
+                        <br />
+                        Waiting for the worst never changes how it hurts<br />
+                        and i'm ready for the change<br />
+                        like a hurricane<br />
+                        come and blow my house away<br />
+                        but i'll see you by and by<br />
+                        waving from the sky<br />
+                        <br />
+                        Like a hurricane<br />
+                        Come and blow my house away<br />
+                        Oh darling, please don't cry<br />
+                        See me in the sky<br />
+                        <br />
+                        <br />
+                        Joy &amp; Pain<br />
+                        <br />
+                        When the night is much to strong<br />
+                        to wait until the morning comes<br />
+                        You try and free your time<br />
+                        And kill your mind<br />
+                        But you don't have to wait alone<br />
+                        <br />
+                        See it in the morning light<br />
+                        You'll it's just the time's not right<br />
+                        And if I did before i don't care anymore<br />
+                        I've finally given up the fight<br />
+                        <br />
+                        And it's a long way down<br />
+                        To fall so far<br />
+                        So don't be so hard upon yourself<br />
+                        <br />
+                        The stars so bright and grand<br />
+                        Can hold them in my hands<br />
+                        And all the joy and pain<br />
+                        Is all the same thing<br />
+                        <br />
+                        Only in the darkest night<br />
+                        You'll find the brightest light<br />
+                        And all the joy and pain<br />
+                        Is all the same thing<br />
+                        All the same thing<br />
+                        <br />
+                        <br />
+                        Turning to White<br />
+                        <br />
+                        All the colours turning to white<br />
+                        Feels like you could give up the fight<br />
+                        High enough to fly with the kites<br />
+                        And look down on the Ivanhoe lights<br />
+                        Arm in arm with your love again<br />
+                        To see the Santa Homer Simpson<br />
+                        All the colours turning to white<br />
+                        Never let your heart be denied<br />
+                        <br />
+                        Jess if you could just see me now<br />
+                        Jessica I think you'd be proud<br />
+                        I've really got my heart in my mouth<br />
+                        Just about to fall off this cloud<br />
+                        Now it feels like morning's to bright<br />
+                        Only growing lighter and light<br />
+                        All the colours turn in to white<br />
+                        Never say that love's not a right<br />
+                        <br />
+                        You save me a place<br />
+                        hanging on at heavens door<br />
+                        I'm always been late<br />
+                        This time I won't be there at all<br />
+                        Ahh but I see the path divide<br />
+                        Ahh And I watch you out of sight<br />
+                        <br />
+                        <br />
+                        I Love You Too<br />
+                        <br />
+                        I hate myself<br />
+                        Can't say why<br />
+                        Cos then you'd hate me too<br />
+                        <br />
+                        One true love<br />
+                        Can never die<br />
+                        I wonder if it's true<br />
+                        <br />
+                        You love him<br />
+                        And he loves you<br />
+                        You know I love you too<br />
+                        <br />
+                        I see your name<br />
+                        Is on his list<br />
+                        I guess I never knew<br />
+                        <br />
+                        No other way<br />
+                        To learn this gift<br />
+                        Now I know it's true<br />
+                        <br />
+                        You love him<br />
+                        And he loves you<br />
+                        You know I love you too<br />
+                        <br />
+                        You know I love you too<br />
+                        <br />
+                        'But how can this be true?<br />
+                        I Love You Too.'<br />
+                        <br />
+                        I love you too.<br />
+                        <br />
+                        <br />
+                        Caravan Park<br />
+                        <br />
+                        <br />
+                        Step into the Light<br />
+                        <br />
+                        Hey mum, job's done<br />
+                        You've been holding on<br />
+                        You don't have to worry anymore<br />
+                        <br />
+                        No please, I need to see<br />
+                        Don't hide your face from me<br />
+                        Step into the light once more<br />
+                        <br />
+                        Life will hit you with a bang<br />
+                        Soon everything we love will burn<br />
+                        <br />
+                        There's a book of grace and a book of sin<br />
+                        We're writing in<br />
+                        Thank you and I'm sorry, friends<br />
+                        <br />
+                        It's all done we're moving on<br />
+                        I'm happy mum<br />
+                        We've got another life to live<br />
+                        <br />
+                        Life will hit you with a bang<br />
+                        Soon everything we love will burn<br />
+                        Take all the songs we sang<br />
+                        They just won't be strong enough to turn<br />
+                        <br />
+                        <br />
+                        Gasbag, sad drag<br />
+                        You fucking fag<br />
+                        We don't have a chair for you<br />
+                        <br />
+                        Go on, keep walking on<br />
+                        Out of town<br />
+                        Ain't nobody cares for you<br />
+                        <br />
+                        When you step into the light<br />
+                        They will not be strong enough to burn<br />
+                        Whatever life you've been denied<br />
+                        You will turn into a love we'll learn<br />
+                        <br />
+                        <br />
+                        Eyes of Love<br />
+                        <br />
+                        Only the eyes of love<br />
+                        Only the Eyes of Love<br />
+                        Only the Eyes of Love<br />
+                        Prevail<br />
+                        And all of your lies<br />
+                        Your secret disguises<br />
+                        All your spies<br />
+                        Will fail<br />
+                        <br />
+                        Only the purest white<br />
+                        in the depths of the darkest night<br />
+                        only what's right is right<br />
+                        Stand tall<br />
+                        I see what you've done<br />
+                        You'll keep us all dumb<br />
+                        It'll last for so long<br />
+                        Then fall<br />
+                        <br />
+                        No, I'm not ready to let it go<br />
+                        And fade into the afterglow<br />
+                        All wide-eyed<br />
+                        <br />
+                        I'm not ready to let it go<br />
+                        All the seasons we'll never know<br />
+                        In twilight<br />
+                        <br />
+                        <br />
+                        Deeper Love<br />
+                        <br />
+                        Sometimes you want to close off<br />
+                        But you've got to keep yourself open<br />
+                        Cos a song will come and enter your heart<br />
+                        when your heart is broken<br />
+                        when it's torn apart<br />
+                        <br />
+                        <br />
+                        <br />
+                        You'll search this whole world just to find<br />
+                        To find a keeper<br />
+                        Keep your love<br />
+                        If we can hold on through the hard times<br />
+                        Our love will grow deeper<br />
+                        Deeper love<br />
+                        Deeper love<br />
+                        <br />
+                        When our family was turn apart<br />
+                        I thought that it was forever<br />
+                        but we each find our own different path<br />
+                        that will lead us back together<br />
+                        though the road is hard<br />
+                        <br />
+                        You'll search this whole world just to find<br />
+                        to find a keeper<br />
+                        Keep your love<br />
+                        If we can hold on through the hard times<br />
+                        Our love will grow deeper<br />
+                        Deeper love<br />
+                        <br />
+                        Deeper Love<br />
+                        <br />
+                        Hold On.<br /></p>
+                    </div>
+
+
+
+            </div>
+        </div>
+<script>
+    $(function(){
+
+        /*
+         * Example of custom method added to the component
+         *
+         * */
+
+        $.containerize.addMethod("showdata",function(){
+            var el = this;
+            var txt = "container properties:<br><br>";
+            var data = el.$.data();
+            for (var i in data){
+                txt += i+"= "+ data[i]+"<br>";
+            }
+            txt += "<hr><br>"
+            el.content.prepend(txt);
+        });
+
+
+        /*
+         * Example of how to add a new button for the button bar:
+         *
+         * */
+
+        var newBtns = {
+            changecontent: {
+                idx:"changecontent",
+                label:"&#xe044;",
+                className:"",
+                action: function(container,btn){$(container).containerize("changecontent","/newContent.php",{id:01, temp:'simple'})}
+            }
+        }
+        $.extend($.containerize.defaultButtons, newBtns);
+
+
+        /***********************************************/
+
+        $(".container").containerize({
+            onLoad: function(el){} //$(el).css({opacity:.7})
+        });
+
+        /*
+         * Example of custom Buttons for the toolbar
+         *
+         * */
+        var changeSkinBtn = {
+            idx: "changeSkinBtn",
+            label: "change skin",
+            className:"",
+            action: function(el, btn){
+                if(!$(el).hasClass('black'))
+                    $(el).containerize('skin','black', el.$.data("skin"));
+                else
+                    $(el).containerize('skin');
+            }
+        }
+
+        var iconizeBtn = {
+            idx: "iconizeBtn",
+            label: "iconize",
+            className:"",
+            action: function(el, btn){
+                $(el).containerize("iconize");
+            }
+        }
+
+        var dockBtn = {
+            idx: "dockBtn",
+            label: "dock",
+            className:"",
+            action: function(el, btn){
+                $(el).containerize("iconize","dock");
+            }
+        }
+
+        var closeBtn = {
+            idx: "closeBtn",
+            label: "close",
+            className:"",
+            action: function(el, btn){
+                $(el).containerize("close");
+            }
+        }
+
+
+    })
+
+</script>
+        
+
+        <script type="text/javascript">
+            //<![CDATA[
+            $(document).ready(function(){
+
+                new jPlayerPlaylist({
+                    jPlayer: "#jquery_jplayer_1",
+                    cssSelectorAncestor: "#jp_container_1"
+                }, [
+                    {
+                                title:"Beneath the World",
+                                mp3:"music/introbeneath.mp3",
+                            },
+                            {
+                                title:"Too High",
+                                mp3:"music/too high home.mp3",
+                            },
+                            {
+                                title:"Sky Man",
+                                mp3:"music/sky man home again.mp3",
+                            },
+                            {
+                                title:"Joy & Pain",
+                                mp3:"music/joy and pain home 4.mp3",
+                            },
+                            {
+                                title:"Turning To White",
+                                mp3:"music/turning to white home again 3.mp3",
+                            },
+                            {
+                                title:"I Love You Too",
+                                mp3:"music/I LOVE YOU TOO MM3.mp3",
+                            },
+                            {
+                                title:"Caravan Park",
+                                mp3:"music/CARAVAN PARK DOM MIX 1.mp3",
+                            },
+                            {
+                                title:"Step into the Light",
+                                mp3:"music/STEP INTO THE LIGHT MM COMP.mp3",
+                            },
+                            {
+                                title:"Eyes of Love",
+                                mp3:"music/EYES OF LOVE MM10.mp3",
+                            },
+                            {
+                                title:"Deeper Love",
+                                mp3:"music/DEEPER LOVE DESK MIX 7.7.13.mp3",
+                            }
+                ], {
+                    swfPath: "js",
+                    supplied: "oga, mp3",
+                    wmode: "window",
+                    smoothPlayBar: true,
+                    keyEnabled: false
+                });
+            });
+            //]]>
+        </script>
+
+
+
+
+	</body>
+
+
+
+</html>
