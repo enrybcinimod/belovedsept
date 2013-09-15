@@ -17,38 +17,20 @@
         <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
         <script type="text/javascript" src="inc/jquery.mb.containerPlus.js"></script>
         <script type="text/javascript" src="inc/mb.containerPlus.plugins.js"></script>
-        <style>
-
-
-        #actions button{
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            padding: 1em;
-            display: inline-block;
-            margin: 3px;
-            font-size: 1em;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            background: #d4d4d4;
-        }
-
-        #actions button:hover{
-            background: #ffc0ff;
-        }
-
-
-
-        </style>
         
-
+        
 
 	</head>
 	<body>
 
 
 
-		<a id="playerbutton" href="play" data-slidepanel="panel" style="border-radius:10px; margin-left:.5em; padding:.6em; background:#CCDDEF; color:#BB7A7A; text-decoration:none; font-size:2.4em">&#9776;</a>
+		<a href="play" data-slidepanel="panel" style="background: url(menu.jpg) 0px 20px no-repeat; 
+            position: relative;
+            padding: 2em 5em 5em 3em;
+            z-index: 400001;
+            opacity: 1;
+            border-radius:10px;"></a>
 
 		<script type="text/javascript">
 		      $(document).ready(function(){
@@ -70,7 +52,7 @@
 	            	wait: true,
                     transition: 'flash',
                     touchTransition: 'fadeslide',
-                    transitionSpeed: 770
+                    transitionSpeed: 700
 
 	            })
 	            var data = [
@@ -514,6 +496,7 @@
 
             </div>
         </div>
+    </div>
 <script>
     $(function(){
 
