@@ -32,9 +32,13 @@ div.jp-video {
 }
 div.jp-audio {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width:36.3em;
 	height: 11em;
 	background: url(../../skin/blue.monday/playerbtn.jpg) repeat;
+=======
+	width:25em;
+>>>>>>> parent of a6e8b65... colors and stuff
 =======
 	width:25em;
 >>>>>>> parent of a6e8b65... colors and stuff
@@ -95,8 +99,11 @@ div.jp-audio div.jp-type-single div.jp-interface {
 div.jp-audio div.jp-type-playlist div.jp-interface {
 	height:80px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	background: url(../../skin/blue.monday/playerbtn.jpg) repeat;
+=======
+>>>>>>> parent of a6e8b65... colors and stuff
 =======
 >>>>>>> parent of a6e8b65... colors and stuff
 }
@@ -129,10 +136,13 @@ div.jp-interface ul.jp-controls {
 
 div.jp-audio ul.jp-controls {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 50em;
 	height: 7.5em;
 	padding:7px 0px 0px 20px;
 =======
+=======
+>>>>>>> parent of a6e8b65... colors and stuff
 	width: 240px;
 	padding:10px 0px 0px 20px;
 >>>>>>> parent of a6e8b65... colors and stuff
@@ -203,6 +213,9 @@ a.jp-pause {
 }
 a.jp-pause:hover {
 	background: url("playerbuttons.gif") -84px -80px no-repeat;
+<<<<<<< HEAD
+>>>>>>> parent of a6e8b65... colors and stuff
+=======
 >>>>>>> parent of a6e8b65... colors and stuff
 }
 
@@ -223,6 +236,7 @@ a.jp-stop:hover {
 }
 
 a.jp-previous {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	background: url("playerbtn.jpg") -69px -16px no-repeat;
 	padding: 0 .6em .5em;
@@ -247,10 +261,22 @@ a.jp-previous:hover {
 }
 
 a.jp-next {
+=======
+	background: url("playerbuttons.gif") -8px -234px no-repeat;
+}
+a.jp-previous:hover {
+	background: url("playerbuttons.gif") -84px -234px no-repeat;
+}
+
+a.jp-next {
+>>>>>>> parent of a6e8b65... colors and stuff
 	background: url("playerbuttons.gif") -6px -156px no-repeat;
 }
 a.jp-next:hover {
 	background: url("playerbuttons.gif") -84px -156px no-repeat;
+<<<<<<< HEAD
+>>>>>>> parent of a6e8b65... colors and stuff
+=======
 >>>>>>> parent of a6e8b65... colors and stuff
 }
 
@@ -273,8 +299,13 @@ div.jp-audio div.jp-type-single div.jp-progress {
 }
 div.jp-audio div.jp-type-playlist div.jp-progress {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	left:25em;
 	width:10.7em;
+=======
+	left:230px;
+	width:140px;
+>>>>>>> parent of a6e8b65... colors and stuff
 =======
 	left:230px;
 	width:140px;
@@ -412,8 +443,13 @@ div.jp-audio div.jp-type-single div.jp-time-holder {
 }
 div.jp-audio div.jp-type-playlist div.jp-time-holder {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	left:25em;
 	width:10.7em;
+=======
+	left:210px;
+	width:170px;
+>>>>>>> parent of a6e8b65... colors and stuff
 =======
 	left:210px;
 	width:170px;
