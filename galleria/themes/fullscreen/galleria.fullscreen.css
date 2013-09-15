@@ -3,7 +3,7 @@
 #galleria-loader{height:1px!important}
 
 html,
-body { background: #000 }
+body { background: #FFF }
 .galleria-container {
     height: 100%;
     overflow: hidden;
@@ -11,7 +11,7 @@ body { background: #000 }
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: #FFF;
 }
 .galleria-container img {
     -moz-user-select: none;
