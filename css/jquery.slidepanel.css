@@ -1,8 +1,6 @@
 /* Slide Panel */
         .cb_slide_panel {
-            background: url(../skin/blue.monday/playerbtn.jpg) repeat;
-            border-right: 1px solid #E0E0E0;
-            box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), -1px -1px 0 rgba(255, 255, 255, 0.85) inset;
+            background: url(../skin/blue.monday/paperplayer.jpg) repeat;
             position: fixed;
             z-index: 65000;
             display: none;
@@ -15,11 +13,11 @@
             box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), 1px 1px 0 rgba(255, 255, 255, 0.85) inset;
         }
         .cb_slide_panel.panel_top, .cb_slide_panel.panel_bottom {
-            height: 13.6em;
-            width: 1em;
+            height: 16.5em;
+            width: 38.9em;
         }
         .cb_slide_panel.panel_top {
-            box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), -1px -1px 0 rgba(255, 255, 255, 0.85) inset;
+           
         }
         .cb_slide_panel.panel_bottom {
             box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.17), 1px 1px 0 rgba(255, 255, 255, 0.85) inset;
