@@ -401,7 +401,8 @@ div.jp-title,
 div.jp-playlist {
 	width:100%;
 	display: block;
-	background-color:#222;
+	background-color:#FFF;
+	background-image:url(../../playlist.jpg);
 	border-top:1px solid #009be3;
 }
 div.jp-type-single div.jp-title,
@@ -414,15 +415,19 @@ div.jp-playlist ul {
 	list-style-type:none;
 	margin:0;
 	padding:0 20px;
-	font-size:.6em;
+	font-size:.4em;
 }
 
 div.jp-title li {
 	padding:5px 0;
-	font-weight:bold;
 }
 div.jp-playlist li {
-	padding:5px 0 4px 20px;
+	padding:1.5em .7em 1.5em .5em;
+	opacity: .1;
+}
+
+div.jp-playlist li:first-child {
+	padding:4.6em 0 1.5em 4px;
 }
 
 div.jp-playlist li div {
