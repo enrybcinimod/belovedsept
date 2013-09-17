@@ -12,6 +12,7 @@ body { background: #fff }
     left: 0;
     width: 100%;
     background: #fff;
+    background-image:url(../../../subtle_white_feathers.png);
 }
 .galleria-container img {
     -moz-user-select: none;
