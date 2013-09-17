@@ -394,7 +394,6 @@ div.jp-video div.jp-duration {
 
 div.jp-title {
 	font-weight:bold;
-	text-align:center;
 }
 
 div.jp-title,
@@ -402,7 +401,6 @@ div.jp-playlist {
 	width:100%;
 	display: block;
 	background-color:#FFF;
-	background-image:url(../../playlist.jpg);
 	border-top:1px solid #009be3;
 }
 div.jp-type-single div.jp-title,
@@ -414,22 +412,77 @@ div.jp-title ul,
 div.jp-playlist ul {
 	list-style-type:none;
 	margin:0;
-	padding:0 20px;
-	font-size:.4em;
+	padding:0;
+	font-size:2.6em;
 }
 
 div.jp-title li {
 	padding:5px 0;
 }
 div.jp-playlist li {
-	padding:1.5em .7em 1.5em .5em;
-	opacity: .1;
+	text-align: left;
+	opacity: 1;
 }
-
 div.jp-playlist li:first-child {
-	padding:4.6em 0 1.5em 4px;
+	background-image: url(beneath.jpg); 
 }
-
+div.jp-playlist li:first-child:hover {
+	background-image: url(beneathhvr.jpg); 
+}
+div.jp-playlist li:nth-child(2) {
+	background-image: url(toohigh.jpg); 
+}
+div.jp-playlist li:nth-child(2):hover {
+	background-image: url(toohighhvr.jpg);
+}
+div.jp-playlist li:nth-child(3) {
+	background-image: url(skyman.jpg); 
+}
+div.jp-playlist li:nth-child(3):hover {
+	background-image: url(skymanhvr.jpg);
+}
+div.jp-playlist li:nth-child(4) {
+	background-image: url(turningtowhite.jpg); 
+}
+div.jp-playlist li:nth-child(4):hover {
+	background-image: url(turningtowhitehvr.jpg);
+}
+div.jp-playlist li:nth-child(5) {
+	background-image: url(iloveyoutoo.jpg); 
+}
+div.jp-playlist li:nth-child(5):hover {
+	background-image: url(iloveyoutoohvr.jpg);
+}
+div.jp-playlist li:nth-child(6) {
+	background-image: url(caravanpark.jpg); 
+}
+div.jp-playlist li:nth-child(6):hover {
+	background-image: url(caravanparkhvr.jpg);
+}
+div.jp-playlist li:nth-child(7) {
+	background-image: url(stepintothelight.jpg); 
+}
+div.jp-playlist li:nth-child(7):hover {
+	background-image: url(stepintothelighthvr.jpg);
+}
+div.jp-playlist li:nth-child(8) {
+	background-image: url(joyandpain.jpg); 
+}
+div.jp-playlist li:nth-child(8):hover {
+	background-image: url(joyandpainhvr.jpg);
+}
+div.jp-playlist li:nth-child(9) {
+	background-image: url(eyesoflove.jpg); 
+}
+div.jp-playlist li:nth-child(9):hover {
+	background-image: url(eyesoflovehvr.jpg);
+}
+div.jp-playlist li:nth-child(10) {
+	background-image: url(deeperlove.jpg); 
+}
+div.jp-playlist li:nth-child(10):hover {
+	background-image: url(deeperlovehvr.jpg);
+}
 div.jp-playlist li div {
 	display:inline;
 }
@@ -448,8 +501,6 @@ div.jp-type-playlist div.jp-playlist a {
 	font-family: "Times New Roman", Times, serif;
 	color: #FFF;
 	text-decoration: none;
-	padding-left: 5em;
-	padding-right: 5em;
 }
 div.jp-type-playlist div.jp-playlist a:hover {
 	color:#FF88bb;
